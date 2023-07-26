@@ -5,7 +5,6 @@ public class T11_ChangingDataTypes {
         int currentYear = 2023;
         String userDateOfBirth = "2003";
         int dateOfBirth = Integer.parseInt(userDateOfBirth);
-
         System.out.println("Age = "+ (currentYear - dateOfBirth)); // We can't subtract string to an integer because of variable difference.So, we change string to integer by this method.
 
         String userAgeWithPartialYear = "19.7";

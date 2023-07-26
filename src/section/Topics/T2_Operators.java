@@ -8,7 +8,7 @@ public class T2_Operators {
        1. Unary Operators
 
      ++ (Increment) This operator is used to increment the value by 1. There are two types of increment, i.e., post-increment (a++) and pre-increment (++a)
-     -- (Decrement)	This operator is used to decrement the value by 1. There are two types of decrement, i.e., post decrement (a–) and pre decrement (–a)
+     -- (Decrement)	This operator is used to decrement the value by 1. There are two types of decrement, i.e., post decrement (a–-) and pre decrement (-–a)
       ! (Invert)	This operator is used to invert a boolean value (!a).
 
        2. Arithmetic Operators
@@ -21,8 +21,8 @@ public class T2_Operators {
 
        3. Assignment Operators
 
-      =	This operator is used to assign the value on the right to the operand on the left.
-     +=	This operator is used to add right operand to the left operand and assigns the result to the left operand.
+      =	This operator used to assign the value on the right to the operand on the left.
+     +=	This operator used to add right operand to the left operand and assigns the result to the left operand.
      -=	This operator subtracts right operand from the left operand and assigns the result to the left operand.
      *=	This operator multiplies right operand with the left operand and assigns the result to the left operand.
      /=	This operator divides left operand with the right operand and assigns the result to the left operand.
@@ -33,7 +33,7 @@ public class T2_Operators {
 
      && (Logical AND)	This operator returns True if both the operands are true, otherwise, it returns False.
      || (Logical OR)	This operator returns True if either the operands are true, otherwise it returns False.
-      ! (Logical AND)	This operator returns True if an operand is False. It reverses the logical state of an operand.
+      ! (Logical NOT)	This operator returns True if an operand is False. It reverses the logical state of an operand.
 
        5. Shift Operators
 
