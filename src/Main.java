@@ -7,6 +7,9 @@ public class Main {
         System.out.println("Hello world!");
         Date now = new Date();
         System.out.println(now);
+        while(true){
+            System.out.println("Rinkit");
+        }
 
     }
 }
