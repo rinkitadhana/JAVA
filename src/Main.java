@@ -1,16 +1,15 @@
-
-import java.sql.Time;
-import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        Date now = new Date();
-        System.out.println(now);
-        while(true){
-            System.out.println("Rinkit");
-        }
-
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        double num1 = scanner.nextDouble();
+        String s = scanner.nextLine();
+        String sen = scanner.nextLine();
+        System.out.println(sen);
+        System.out.println(num1);
+        System.out.println(num);
     }
 }
 
