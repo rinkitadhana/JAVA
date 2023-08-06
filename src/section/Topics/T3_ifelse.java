@@ -1,6 +1,9 @@
 package section.Topics;
 
 public class T3_ifelse {
+    public T3_ifelse() {
+    }
+
     public static void main(String[] args) {
         // if else
         boolean isAlien = true;
@@ -17,6 +20,7 @@ public class T3_ifelse {
             System.out.println("You can't drive!");
         } else {
             System.out.println("Enter the correct age!");
+
         }
     }
 }

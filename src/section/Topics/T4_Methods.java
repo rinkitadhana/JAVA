@@ -1,10 +1,15 @@
 package section.Topics;
 
+import java.util.jar.JarOutputStream;
+
 public class T4_Methods {
     public static void main(String[] args) {
         method1();
         method2(1,3,4);
         method3();
+        rinkit();
+        rink();
+
         System.out.println(method4(3,3));
         System.out.println(method5(2003));
     }
@@ -24,5 +29,19 @@ public class T4_Methods {
         public static int method5(int dateOfBirth){
          return(2023-dateOfBirth);
         }
+       private static void rinkit(){
+            System.out.println("Rinkit");
+        }
+
+        public static void name(){
+            System.out.println("Rinkit");
+
+    }
+    public static void rink(){
+       System.out.println("Rinkit");
+   }
+
+
+
 }
 
