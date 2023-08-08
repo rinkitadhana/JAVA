@@ -12,16 +12,23 @@ class Mortgage {
         double mortgage = principal * interestRate * (Math.pow(1 + interestRate, periodInMonth) / (Math.pow(1 + interestRate, periodInMonth) - 1));
         return NumberFormat.getCurrencyInstance().format(mortgage);
     }
-    public double setPrincipal() {
+//    public void printPaymentSchedule(){
+//        System.out.println();
+//        System.out.println("PAYMENT SCHEDULE");
+//        System.out.println("--------------");
+//        for (short month =1; month<=periodInMonth; month++){
+//            double balance =
+//        }
+//    }
+    public void setPrincipal() {
         while (true) {
             System.out.print("Principal(1k-1M): ");
             principal = input.nextDouble();
             if (principal >= 1000 && principal <= 1000000)
                 break;
         }
-        return principal;
     }
-    public double setInterestRate() {
+    public void setInterestRate() {
         while (true) {
             System.out.print("Annual Interest Rate: ");
             double annualInterestRate = input.nextDouble();
@@ -30,9 +37,8 @@ class Mortgage {
                 break;
             }
         }
-        return interestRate;
     }
-    public double setPeriodInMonth() {
+    public void setPeriodInMonth() {
         while (true) {
             System.out.print("Period (Years): ");
             int period = input.nextInt();
@@ -41,7 +47,6 @@ class Mortgage {
                 break;
             }
         }
-        return periodInMonth;
     }
     private double getPrincipal() {
         return principal;

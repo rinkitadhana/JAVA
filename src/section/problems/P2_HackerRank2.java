@@ -23,9 +23,6 @@ public class P2_HackerRank2 {
                 xAsString = "00" + xAsString;
                 System.out.println(padded + xAsString);
             }
-
-
-
         }
         System.out.println("================================");
 
