@@ -1,7 +1,5 @@
 package section.Topics;
 
-import com.sun.security.jgss.GSSUtil;
-
 public class T23_TextBox {
    public String text;// field
 
