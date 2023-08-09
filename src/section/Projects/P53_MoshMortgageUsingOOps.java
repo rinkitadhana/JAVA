@@ -1,7 +1,9 @@
 package section.Projects;
+
 import java.text.NumberFormat;
 import java.util.Scanner;
-public class P52_MoshMortgage {
+
+public class P53_MoshMortgageUsingOOps {
     final static byte MONTHS_IN_YEAR = 12;
     final static byte PERCENT = 100;
     public static double readNumber(String prompt,double min,double max){
@@ -27,7 +29,6 @@ public class P52_MoshMortgage {
         float months = years*MONTHS_IN_YEAR;
         return principal* (Math.pow(1+monthlyInterest,numberOfPayments) - Math.pow(1+monthlyInterest,months))/(Math.pow(1+monthlyInterest,numberOfPayments)-1);
     }
-
     public static void printMortgage(int principal,float annualInterest, byte years){
         double mortgage = calculateMortgage(principal, annualInterest, years);
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
@@ -52,3 +53,4 @@ public class P52_MoshMortgage {
         printPaymentSchedule(principal,annualInterest,years);
     }
 }
+

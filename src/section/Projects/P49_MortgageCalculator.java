@@ -1,6 +1,4 @@
 package section.Projects;
-
-import java.security.Principal;
 import java.text.NumberFormat;
 import java.util.Scanner;
 class Mortgage {
@@ -12,14 +10,24 @@ class Mortgage {
         double mortgage = principal * interestRate * (Math.pow(1 + interestRate, periodInMonth) / (Math.pow(1 + interestRate, periodInMonth) - 1));
         return NumberFormat.getCurrencyInstance().format(mortgage);
     }
-//    public void printPaymentSchedule(){
-//        System.out.println();
-//        System.out.println("PAYMENT SCHEDULE");
-//        System.out.println("--------------");
-//        for (short month =1; month<=periodInMonth; month++){
-//            double balance =
-//        }
-//    }
+    public double calculateBalance(double numberOfPayments){
+
+
+        return principal* (Math.pow(1+interestRate,numberOfPayments) - Math.pow(1+interestRate,periodInMonth))/(Math.pow(1+interestRate,numberOfPayments)-1);
+    }
+    public void printPaymentSchedule(){
+            System.out.println();
+            System.out.println("MORTGAGE");
+            System.out.println("--------");
+            System.out.println("Monthly Payment: "+mortgageCalculate());
+
+            System.out.println();
+            System.out.println("PAYMENT SCHEDULE");
+            System.out.println("----------------");
+            for(int month=1; month<=periodInMonth; month++){
+                System.out.println(NumberFormat.getCurrencyInstance().format(calculateBalance(month)));
+            }
+    }
     public void setPrincipal() {
         while (true) {
             System.out.print("Principal(1k-1M): ");
@@ -64,8 +72,7 @@ public class P49_MortgageCalculator {
          mortgage.setPrincipal();
          mortgage.setInterestRate();
          mortgage.setPeriodInMonth();
-        String result = mortgage.mortgageCalculate();
-        System.out.println(result);
+         mortgage.printPaymentSchedule();
     }
 }
 
