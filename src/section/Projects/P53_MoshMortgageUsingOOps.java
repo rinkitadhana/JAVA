@@ -2,22 +2,28 @@ package section.Projects;
 
 import java.text.NumberFormat;
 import java.util.Scanner;
-
-public class P53_MoshMortgageUsingOOps {
-    final static byte MONTHS_IN_YEAR = 12;
-    final static byte PERCENT = 100;
+class Console{
+    private static Scanner scan = new Scanner(System.in);
+    public static double readNumber(String prompt){
+        return scan.nextDouble();
+    }
     public static double readNumber(String prompt,double min,double max){
         double value;
-        Scanner scan = new Scanner(System.in);
         while (true) {
             System.out.print(prompt+": ");
-            value = scan.nextInt();
+            value = scan.nextDouble();
             if (min<=value && value<=max)
                 break;
             System.out.println("Enter a number between "+min+" and "+max);
         }
         return value;
     }
+
+}
+public class P53_MoshMortgageUsingOOps {
+    final static byte MONTHS_IN_YEAR = 12;
+    final static byte PERCENT = 100;
+
     public static double calculateMortgage(int principal,float annualInterest,byte years){
         float monthlyInterest = annualInterest / MONTHS_IN_YEAR / PERCENT;
         float months = years*MONTHS_IN_YEAR;
@@ -46,11 +52,11 @@ public class P53_MoshMortgageUsingOOps {
         }
     }
     public static void main(String[] args) {
-        int principal = (int) readNumber("Principal", 1_000, 1_000_000);
-        float annualInterest = (float)readNumber("Annual Interest",1,30);
-        byte years = (byte) readNumber("Years",1,30);
+        int principal = (int) Console.readNumber("Principal", 1_000, 1_000_000);
+        float annualInterest = (float) Console.readNumber("Annual Interest",1,30);
+        byte years = (byte) Console.readNumber("Years",1,30);
         printMortgage(principal,annualInterest,years);
-        printPaymentSchedule(principal,annualInterest,years);
-    }
+        printPaymentSchedule(principal,annualInterest,years);}
+
 }
 

@@ -9,7 +9,7 @@ public class P52_MoshMortgage {
         Scanner scan = new Scanner(System.in);
         while (true) {
             System.out.print(prompt+": ");
-            value = scan.nextInt();
+            value = scan.nextDouble();
             if (min<=value && value<=max)
                 break;
             System.out.println("Enter a number between "+min+" and "+max);
