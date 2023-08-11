@@ -1,15 +1,12 @@
 package section.Topics;
-
 public class T23_TextBox {
    public String text;// field
-
     public void setText(String text){
         this.text = text;
     }
     public void clear(){
         this.text = "yo";
     }
-
 }
 class TextBoxRunner{
     public static void main(String[] args) {
@@ -23,7 +20,6 @@ class TextBoxRunner{
         texBox2.clear();
         System.out.println(texBox2.text);
     }
-
 }
 
 
