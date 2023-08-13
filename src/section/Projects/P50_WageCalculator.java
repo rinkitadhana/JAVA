@@ -7,7 +7,7 @@ class Employee{ //class
     private int baseSalary; //field
     private int hourlyRate;
 
-    public Employee(int baseSalary, int hourlyRate){ // constructor
+    public Employee(int baseSalary, int h ourlyRate){ // constructor
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
     }
