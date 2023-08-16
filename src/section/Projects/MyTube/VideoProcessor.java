@@ -10,6 +10,7 @@ public class VideoProcessor {
 
         var emailService = new EmailService();
         emailService.sendEmail(video.getUser());
+        notify();
     }
 }
 
