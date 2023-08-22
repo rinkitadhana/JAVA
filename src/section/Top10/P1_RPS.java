@@ -6,7 +6,6 @@ public class P1_RPS {
         System.out.println("Welcome to 'THE ROCK PAPER AND SCISSORS'");
         result();
         System.out.println("THANK YOU FOR PLAYING!\n");
-        System.out.println("MADE BY RINKIT ADHANA");
     }
     public static void result(){
         while (true){
