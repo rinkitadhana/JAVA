@@ -32,6 +32,7 @@ public class P2_TikTakToe {
         if (hasContestantWon(board, 'X')) {
             printBoard(board);
             System.out.println("PLayer wins!");
+
             return true;
         }
         if (hasContestantWon(board, 'O')) {
