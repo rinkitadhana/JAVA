@@ -1,4 +1,4 @@
-package section.Top10;
+package section.TopProjects;
 
 public class P4_SudokuSolver {
     private static final int GRID_SIZE = 9;

@@ -1,4 +1,4 @@
-package section.Top10;
+package section.TopProjects;
 import java.util.Scanner;
 import java.util.Random;
 public class P1_RPS {

@@ -1,4 +1,4 @@
-package section.Top10;
+package section.TopProjects;
 
 import java.util.Random;
 import java.util.Scanner;
