@@ -3,7 +3,7 @@ package section.Top10;
 import java.util.Random;
 import java.util.Scanner;
 
-public class P2_TikTakToe {
+public class P2_TicTacToe {
     public static void main(String[] args) {
 
         char[][] board = {{' ', ' ', ' '},
