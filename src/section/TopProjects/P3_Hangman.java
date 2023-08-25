@@ -72,14 +72,14 @@ public class P3_Hangman {
     }
 
     private static void printHangedMan(Integer wrongCount) {
-        System.out.println(" -------");
-        System.out.println(" |     |");
+        System.out.println("-------");
+        System.out.println("   |   ");
         if (wrongCount >= 1) {
-            System.out.println(" O");
+            System.out.println("   O   ");
         }
 
         if (wrongCount >= 2) {
-            System.out.print("\\ ");
+            System.out.print("  \\ ");
             if (wrongCount >= 3) {
                 System.out.println("/");
             }
@@ -89,11 +89,11 @@ public class P3_Hangman {
         }
 
         if (wrongCount >= 4) {
-            System.out.println(" |");
+            System.out.println("   |   ");
         }
 
         if (wrongCount >= 5) {
-            System.out.print("/ ");
+            System.out.print("  / ");
             if (wrongCount >= 6) {
                 System.out.println("\\");
             }
