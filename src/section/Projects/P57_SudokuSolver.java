@@ -1,6 +1,6 @@
-package section.TopProjects;
+package section.Projects;
 
-public class P4_SudokuSolver {
+public class P57_SudokuSolver {
     private static final int GRID_SIZE = 9;
 
     public static void main(String[] args) {

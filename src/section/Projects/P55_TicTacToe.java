@@ -1,9 +1,9 @@
-package section.TopProjects;
+package section.Projects;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class P2_TicTacToe {
+public class P55_TicTacToe {
     public static void main(String[] args) {
 
         char[][] board = {{' ', ' ', ' '},

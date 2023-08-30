@@ -1,4 +1,4 @@
-package section.TopProjects;
+package section.Projects;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-public class P3_Hangman {
+public class P56_Hangman {
     public static void main(String[] args) throws FileNotFoundException {
 
         Scanner keyboard = new Scanner(System.in);
