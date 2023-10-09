@@ -1,5 +1,14 @@
 package Leetcode;
-class Solution {
+
+import java.util.Arrays;
+
+public class TwoSum {
+    public static void main(String[] args) {
+        var result = new SolutionOfTwoSum();
+        System.out.println(Arrays.toString(result.twoSum(new int[]{1, 2, 3}, 3)));
+    }
+}
+class SolutionOfTwoSum {
     public int[] twoSum(int[] nums, int target) {
         int num1=0;
         int num2=0;
