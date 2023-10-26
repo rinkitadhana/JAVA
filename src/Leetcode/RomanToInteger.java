@@ -6,7 +6,7 @@ public class RomanToInteger {
     }
 }
 
-class Solution {
+class SolutionOfRomanToInteger {
     public int romanToInt(String s) {
 
 
