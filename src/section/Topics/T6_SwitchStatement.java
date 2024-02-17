@@ -10,8 +10,6 @@ public class T6_SwitchStatement {
             case 2:
                 System.out.println("Value is 2");
                 break;
-            case 3:
-            case 4:
             case 5:
                 System.out.println("Value is 3,4 or 5");
                 break;

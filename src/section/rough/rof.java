@@ -1,5 +1,7 @@
 package section.rough;
 
+import java.util.Scanner;
+
 public class rof {
     public static void main(String[] args) {
 //        System.out.println("Hello My name is Rinkit Adhana!");
@@ -11,6 +13,12 @@ public class rof {
 //        System.out.println(number);
 //        System.out.println();
 //        int x = 0;
+        final int RINKIT = 10;
+        var scan = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int x = scan.nextInt();
+        System.out.println(x);
+        System.out.println(RINKIT);
 //        x+=2;
 //        System.out.println(x);
 //        String rink = "rinkit";
