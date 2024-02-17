@@ -13,6 +13,5 @@ public class T1_HelloWorld {
         int a =0;
         a=17;
         System.out.println(a);
-
     }
 }
